@@ -5,6 +5,7 @@ programa {
     real nota_2
     real nota_3
     real media
+    real todas-notas
 
   escreva(" Qual é seu nome? ")
   leia(nome)
@@ -18,13 +19,15 @@ programa {
   escreva(" nota 3: ")
   leia(nota_3)
 
-media=nota_1 + nota_2 + nota_3 / 3
+todas_notas=nota_1 + nota_2 + nota_3
 
-se(media>7>7)
+media=todas_notas/3
+
+se(media>=7)
 
   escreva("aprovado")
 
-senao(media<7)
+senao(media >5<7)
 
   escreva(" Recuperação ")
 
